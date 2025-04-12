@@ -6,9 +6,9 @@ from scipy import stats
 
 # ============================ Project Title Page ================================================================================================================
 print("="*70)
-print("📊 COVID-19 Data Analysis & Visualization Project")
-print("🎓 Course: CA2 Data Analysis Project")
-print("🗂 Dataset Source: Official Government COVID Dataset")
+print(" COVID-19 Data Analysis & Visualization Project")
+print(" Course: CA2 Data Analysis Project")
+print(" Dataset Source: Official Government COVID Dataset")
 print("="*70)
 
 # ============================ Load and Prepare Dataset ================================================================================================================
@@ -17,7 +17,7 @@ df['Date'] = pd.to_datetime(df['Date'])
 df = df.sort_values('Date')  # Sorting based on Date
 
 # ============================ Dataset Overview ================================================================================================================
-print("\n🔍 Dataset Overview")
+print("\n Dataset Overview")
 print("Shape of the matrix:", df.shape)
 print("\n=== Column Names ===")
 print(df.columns)
@@ -27,7 +27,7 @@ print("\n=== Missing Values ===")
 print(df.isnull().sum())
 
 # ============================ Descriptive Stats for Key Rates ===========================================================================================
-print("\n📈 Descriptive Statistics")
+print("\n Descriptive Statistics")
 print("\n=== Cases Rate - Total ===")
 print("Mean:", df["Cases Rate - Total"].mean())
 print("Median:", df["Cases Rate - Total"].median())
